@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roast</title>
+    <link rel="icon" type="image/x-icon" href="/images/coffee-icon.png">
+    <style>
+        html, body {
+            margin: 0;
+            background: bisque;
+        }
+        
+        .title {
+            position: fixed;
+            left: 50%;
+            margin: 0 0 0 -50px;
+        }
+        
+        nav {
+            height: 38px;
+        }
+        
+        nav:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        
+        nav a {
+            background: rosybrown;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            float: right;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            background: saddlebrown;
+        }
+
+        nav a:first-child {
+            float: left;
+        }
+        
+        .coffee-shop-img {
+            height: calc(100vh - 44px);
+            width: 100vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Roast</h1>
+        <nav class="clearfix">
+            <a href="index.html">Home</a>
+            <a href="order.html">On Table Order</a>
+            <a href="reservation.html">Reservation</a>
+        </nav>
+    </header>
+    <img class="coffee-shop-img" src="images/coffee-shop.png" alt="coffee-shop">
+</body>
+</html>

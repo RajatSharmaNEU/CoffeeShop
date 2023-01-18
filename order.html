@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roast|Delivery</title>
+    <link rel="icon" type="image/x-icon" href="/images/coffee-icon.png">
+    <style>
+        html, body {
+            margin: 0;
+            background: bisque;
+        }
+        
+        .title {
+            position: fixed;
+            left: 50%;
+            margin: 0 0 0 -50px;
+        }
+        
+        nav {
+            height: 38px;
+        }
+        
+        nav:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        
+        nav a {
+            background: rosybrown;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            float: right;
+            margin: 0 20px;
+        }
+        
+        nav a:hover {
+            background: saddlebrown;
+        }
+        
+        nav a:first-child {
+            float: left;
+        }
+        
+        .subTitle {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .subTitle > * {
+            margin-top: 20px;
+        }
+        
+        table {
+            margin: 10px 10%;
+            width: 80%;
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        input[type=number] {
+            width: 87%;
+        }
+        
+        button {
+            border-radius: 0;
+            padding: 5px 10px;
+        }
+    
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="title">Roast</h1>
+    <nav class="clearfix">
+        <a href="index.html">Home</a>
+        <a href="order.html">On Table Order</a>
+        <a href="reservation.html">Reservation</a>
+    </nav>
+</header>
+<main>
+    <div class="subTitle">
+        <h2>Place an order from table or for take away !!!</h2>
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="orderFor">Select Table or Take Away - </label>
+            <select name="" id="orderFor">
+                <option value="0">--select--</option>
+                <option value="TakeAway">Take Away</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+        <h2 style="margin-bottom: 0;">Menu</h2>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <td>Item Number</td>
+            <td>Item Name</td>
+            <td>Item Description</td>
+            <td>Price per unit</td>
+            <td>Quantity</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>#1</td>
+            <td>Espresso</td>
+            <td>One shot of espresso in one espresso cup.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#2</td>
+            <td>Double Espresso</td>
+            <td>Two shot of espresso in one espresso cup.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#3</td>
+            <td>Macchiato</td>
+            <td>One shot of espresso and a dollop of steamed milk and foam on top of the espresso.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#4</td>
+            <td>Ristretto</td>
+            <td>A standard espresso shot, prepared with only half of the amount of water.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#5</td>
+            <td>Americano</td>
+            <td>One shot of espresso over a cup filled with 2/3rds of hot water.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#6</td>
+            <td>Café Latte</td>
+            <td>One shot of espresso, steamed milk and 1 cm micro-foam on top of the milk.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#7</td>
+            <td>Cappuccino</td>
+            <td>Latte with more foam (2-3 cm) on top, and chocolate sprinkle on top.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#8</td>
+            <td>Flat White</td>
+            <td>Cappuccino with no foam.</td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        <tr>
+            <td>#9</td>
+            <td>Mocha</td>
+            <td>A shot of espresso mixed with a spoon of chocolate powder, on top you have to add steamed milk and
+                2-3
+                cm of foam.
+            </td>
+            <td>$3</td>
+            <td>
+                <input type="number" min="0" max="10">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="subTitle">
+        <button>Submit</button>
+    </div>
+</main>
+</body>
+</html>
