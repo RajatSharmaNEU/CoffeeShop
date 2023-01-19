@@ -22,3 +22,5 @@ Tag used in assignment 1
 13. label - A tag which provide text for input control and enhance user experience as it binds with control linked with.
 14. h1, h2, h3 - Heading tags to add big font text commonly use for Heading and Subheading.
 15. table - Tag to create table formatted data. It further holds thead, tbody, tr, td, etc. which make align consist.
+16. header - Semantic tag to represent header section of the document.
+17. main - Semantic tag to represent main section of the document.
